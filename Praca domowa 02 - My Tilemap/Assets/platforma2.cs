@@ -9,9 +9,9 @@ public class platforma2 : MonoBehaviour {
  void Update () {
      gameObject.transform.Translate(MovingDirection * Time.smoothDeltaTime);
          
-     if(gameObject.transform.position.x > 2){
+     if(gameObject.transform.position.x > 1){
          MovingDirection = Vector3.left;
-     }else if (gameObject.transform.position.x < -3) {
+     }else if (gameObject.transform.position.x < 0) {
          MovingDirection = Vector3.right;
      }
  }
